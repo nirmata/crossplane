@@ -44,5 +44,5 @@ cd crossplane
 Edit yaml file and make necessary changes
 
 ```
-k apply -f azure-aks-official.yaml -n infra
+kubectl apply -f azure-aks-official.yaml -n infra
 ```
