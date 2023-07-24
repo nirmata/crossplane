@@ -51,3 +51,10 @@ Edit yaml file and make necessary changes
 ```
 kubectl apply -f azure-aks-official.yaml -n infra
 ```
+
+
+To Delete the cluster
+
+```
+kubectl delete -f azure-aks-official.yaml -n infra
+```
