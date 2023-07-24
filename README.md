@@ -2,6 +2,11 @@
 
 This repository contains the workflow to deploy the aks cluster
 
+Pre-Req:-
+
+1. Azure CLI Access
+2. Necessary Access to deploy the aks cluster
+3. Access to infra namespace in crossplane aks cluster
 
 Clone the Repository locally
 
