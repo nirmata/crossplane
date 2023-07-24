@@ -1,10 +1,11 @@
 # crossplane
+
 This repository contains the workflow to deploy the aks cluster
 
 
-Clone the Repo locally
+Clone the Repository locally
 
-Edit the aks cluster claim file and add the below values in the parameters
+Edit the aks cluster claim file and replace with the below values in the required parameters
 
 ```
 nodeSize: (small, medium, large)
@@ -14,7 +15,7 @@ version: (1.24.9, 1.24.10, 1.25.5, 1.25.6, 1.26.0, 1.26.3, 1.27.1)
 
 ## Usage Example:-
 
-Cluster claim file example:-
+Cluster claim example file:-
 
 ```
 apiVersion: devopstoolkitseries.com/v1alpha1
@@ -33,7 +34,7 @@ spec:
     version: 1.25.5
 ```
 
-User infra namespace
+Use infra namespace to deploy cluster claim
 
 ```
 git clone https://github.com/nirmata/crossplane.git
