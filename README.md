@@ -9,7 +9,8 @@ This repository contains the workflow to deploy the aks cluster
   az login
   ```
   It will redirect to azure login page, where user has to authenticate cli with azure credentials
-  After authentication come back to cli, Run below command to see user details
+
+  After authentication come back to cli, Run below command on terminal to see user details
 
   ```
   az account show
@@ -51,7 +52,7 @@ This repository contains the workflow to deploy the aks cluster
   cd crossplane
   ```
 
-Naming Convention:- 
+#### Naming Convention:- 
 
 
 
