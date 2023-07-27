@@ -83,10 +83,10 @@ Cluster claim example file:-
   apiVersion: devopstoolkitseries.com/v1alpha1
   kind: ClusterClaim
   metadata:
-    name: cs-vikash-test
+    name: csvikastest
     namespace: dev
   spec:
-    id: cs-vikas-aks 
+    id: csvikasaks 
     compositionSelector:
       matchLabels:
         provider: azure-official
