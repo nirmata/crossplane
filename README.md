@@ -163,6 +163,11 @@ Take the newly create cluster access locally
 
     kubectl config current-context
     
+  List the namespace in newly created cluster
+
+    kubectl get namespaces
+
+  There are some pre create namspace dev and production.
 
 Below step should only follow if you want to delete the cluster
 
