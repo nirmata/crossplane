@@ -137,7 +137,7 @@ Take the access of newly  created cluster  locally
     kubectl get secret cluster_id-cluster -n dev
     ```
 
-### Replace value of cluster id at "cluster_id"  place 
+#### Replace value of cluster id at "cluster_id"  place 
   ```
   kubectl --namespace dev \
       get secret cluster_id-cluster \
