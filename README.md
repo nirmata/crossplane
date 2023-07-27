@@ -54,11 +54,15 @@ Naming Convention to be followed in cluster claim file (azure-aks-official.yaml)
 
 Name and id value should be same in cluster claim file (azure-aks-official.yaml)
 
+
+  ```
   name:- team_name-user_name-any_suffix
+  ```
+  ```
   Ex:- dev-arjun-aks
       cs-dolis-demo
       qa-sathya-test
-
+  ```
 
 Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the below values in the required parameters
 
