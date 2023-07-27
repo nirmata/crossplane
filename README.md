@@ -116,10 +116,11 @@ See the cluster creation status
   ```
 
 
-Take the cluster access locally
+Take the newly create cluster access locally
 
 ### Replace value of cluster id at id place and namespace at ns_value
 
+  Get the kubeconfig file
   ```
   kubectl --namespace ns_value \
       get secret id-cluster \
