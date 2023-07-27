@@ -172,7 +172,7 @@ Take the access of newly  created cluster  locally
 
     kubectl get namespaces
 
-  There are some pre create namspace dev and production.
+  There are some pre created namspace dev and production. It can be used for any operation.
 
 Below step should only follow if you want to delete the cluster
 
