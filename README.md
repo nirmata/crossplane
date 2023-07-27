@@ -102,14 +102,23 @@ Use dev namespace to deploy cluster claim
 
 See the cluster creation status
 
+  ```
   kubectl get managed
+  ```
+  ```
   kubectl --namespace dev get clusterclaims
+  ```
+
+### Replace clusterclaim_name with cluster claim name
+
+  ```
   kubectl describe clusterclaim clusterclaim_name -n dev
+  ```
 
 
 Take the cluster access locally
 
-# Replace value of cluster id at id place and namespace at ns_value
+### Replace value of cluster id at id place and namespace at ns_value
 
   ```
   kubectl --namespace ns_value \
