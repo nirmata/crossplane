@@ -128,7 +128,7 @@ Ex:-
   ```
 
 
-Take the newly create cluster access locally
+Take the access of newly  created cluster  locally
 
 #### Replace value of cluster id at "cluster_id"  place 
 
