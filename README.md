@@ -4,7 +4,7 @@ This repository contains the workflow to deploy the aks cluster
 
 ## Pre-Requisite:-
 
-1. Azure CLI Access
+1. Azure CLI Access (Run below commands on terminal)
   ```
   az login
   ```
