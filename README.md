@@ -2,7 +2,7 @@
 
 This repository contains the workflow to deploy the aks cluster
 
-Pre-Req:-
+## Pre-Requisite:-
 
 1. Azure CLI Access
   ```
@@ -182,7 +182,7 @@ To Delete the cluster
   ```
 
 
-# Troubleshooting
+## Troubleshooting
 
 If you see cluster is not coming into ready state run below command to see the reason and make the changes accordingly.
 
