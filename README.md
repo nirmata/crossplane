@@ -56,14 +56,15 @@ Naming Convention:-
 
 Name and id value should be same in cluster claim file (azure-aks-official.yaml)
 Name can have (max 12 character)
+special character are not allowed (_, -, @, %, &, # etc.)
 
   ```
-  name:- team_name-user_name-any_suffix
+  name:- team_name+user_name+any_suffix
   ```
   ```
-  Ex:- dev-arjun
-       cs-dolis
-       qa-sathya
+  Ex:- devarjunaks
+       csdolisdemo
+       qasathyatest
   ```
 
 Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the below values in the required parameters
