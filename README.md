@@ -159,7 +159,8 @@ Take the newly create cluster access locally
   ```
 
 
-    Verify the context, it should be "cluster_id"
+  Verify the context, it should be "cluster_id"
+
     ```
     kubectl config current-context
     ```
