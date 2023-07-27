@@ -158,6 +158,14 @@ Take the newly create cluster access locally
   kubectl get namespaces
   ```
 
+
+    Verify the context, it should be "cluster_id"
+    ```
+    kubectl config current-context
+    ```
+
+Below step should only follow if you want to delete the cluster
+
 To Delete the cluster
 
   ```
