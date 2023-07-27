@@ -83,7 +83,7 @@ Cluster claim example file:-
   apiVersion: devopstoolkitseries.com/v1alpha1
   kind: ClusterClaim
   metadata:
-    name: csvikastest
+    name: csvikasaks
     namespace: dev
   spec:
     id: csvikasaks 
@@ -108,7 +108,7 @@ See the cluster creation status, Cluster creation can take upto 15 minutes
   ```
   kubectl get managed
   ```
-  Wait until you see READY and SYNCED status ture
+  Wait until you see READY and SYNCED status true
 
 Ex:- 
 
@@ -125,15 +125,29 @@ Ex:-
 
 Take the newly create cluster access locally
 
-### Replace value of cluster id at id place and namespace at ns_value
+### Replace value of cluster id at "cluster_id"  place 
 
   Get the kubeconfig file
+    ```
+    kubectl get secret cluster_id-cluster -n dev
+    ```
+
+### Replace value of cluster id at "cluster_id"  place 
   ```
-  kubectl --namespace ns_value \
-      get secret id-cluster \
+  kubectl --namespace dev \
+      get secret cluster_id-cluster \
       --output jsonpath="{.data.kubeconfig}" \
       | base64 -d >kubeconfig.yaml
   ```
+  ```
+  Usage Example:- 
+  # kubectl --namespace dev \
+      get secret csvikash-cluster \
+      --output jsonpath="{.data.kubeconfig}" \
+      | base64 -d >kubeconfig.yaml
+  ```
+
+
   ```
   cat kubeconfig.yaml
   ```
