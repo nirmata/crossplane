@@ -105,17 +105,22 @@ See the cluster creation status
 Take the cluster access locally
 
 # Replace value of cluster id at id place and namespace at ns_value
+
+  ```
   kubectl --namespace ns_value \
       get secret id-cluster \
       --output jsonpath="{.data.kubeconfig}" \
       | base64 -d >kubeconfig.yaml
-
+  ```
+  ```
   cat kubeconfig.yaml
-
+  ```
+  ```
   export KUBECONFIG=$PWD/kubeconfig.yaml
-
+  ```
+  ```
   kubectl get namespaces
-
+  ```
 
 To Delete the cluster
 
