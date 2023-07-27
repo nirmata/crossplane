@@ -1,9 +1,10 @@
 apiVersion: devopstoolkitseries.com/v1alpha1
 kind: ClusterClaim
 metadata:
-  name: cluster_claim_name
+  name: cluster_claim_name 
+  namespace: dev
 spec:
-  id: cluster_claim
+  id: cluster_name
   compositionSelector:
     matchLabels:
       provider: azure-official
