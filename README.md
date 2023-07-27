@@ -37,7 +37,7 @@ Pre-Req:-
 3. Use dev namespace to deploy the cluster claim file
 
   ```
-   kubectl get namespace -n dev
+   kubectl get namespace dev
   ```
 =====================================================
 
