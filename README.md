@@ -55,7 +55,11 @@ Naming Convention:-
 
 
 Name and id value should be same in cluster claim file (azure-aks-official.yaml)
+
+
 Name can have (max 12 character)
+
+
 special character are not allowed (_, -, @, %, &, # etc.)
 
   ```
