@@ -71,7 +71,7 @@ special character are not allowed (_, -, @, %, &, # etc.)
        qasathyatest
   ```
 
-Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the below values in the required parameters
+Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the required values from the below section in the required parameters
 
   ```
   nodeSize: (small, medium, large)
