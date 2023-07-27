@@ -50,18 +50,20 @@ Steps to deploy the cluster claim file:-
   cd crossplane
   ```
 
-Naming Convention to be followed in cluster claim file (azure-aks-official.yaml):-
+Naming Convention:- 
+
+
 
 Name and id value should be same in cluster claim file (azure-aks-official.yaml)
-
+Name can have (max 12 character)
 
   ```
   name:- team_name-user_name-any_suffix
   ```
   ```
-  Ex:- dev-arjun-aks
-      cs-dolis-demo
-      qa-sathya-test
+  Ex:- dev-arjun
+       cs-dolis
+       qa-sathya
   ```
 
 Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the below values in the required parameters
@@ -83,7 +85,7 @@ Cluster claim example file:-
     name: cs-vikash-test
     namespace: dev
   spec:
-    id: cs-vikash-test
+    id: cs-vikas-aks 
     compositionSelector:
       matchLabels:
         provider: azure-official
@@ -100,11 +102,15 @@ Use dev namespace to deploy cluster claim
   kubectl apply -f azure-aks-official.yaml -n dev
   ```
 
-See the cluster creation status
+See the cluster creation status, Cluster creation can take upto 15 minutes
 
   ```
   kubectl get managed
   ```
+  Wait until you see READY and SYNCED status ture
+
+Ex:- 
+
   ```
   kubectl --namespace dev get clusterclaims
   ```
