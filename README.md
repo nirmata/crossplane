@@ -190,15 +190,20 @@ If you see cluster is not coming into ready state run below command to see the r
 See the resourcegroup status
 
 Replace clusterid_name with your clusterid name
-
+  ```
  kubectl get resourcegroup clusterid_name
-
+  ```
+  ```
  kubectl describe resourcegroup clusterid_name
+  ```
 
 See the kuberentes cluster status
 
 Replace clusterid_name with your clusterid name
 
+  ```
   kubectl get kubernetescluster clusterid_name
-
+  ```
+  ```
   kubectl describe kubernetescluster clusterid_name
+  ```
