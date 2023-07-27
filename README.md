@@ -8,7 +8,7 @@ This repository contains the workflow to deploy the aks cluster
   ```
   az login
   ```
-  It will redirect you to azure login page, where user has to authenticate cli with azure credentials
+  It will redirect to azure login page, where user has to authenticate cli with azure credentials
   After authentication come back to cli, Run below command to see user details
 
   ```
@@ -20,6 +20,7 @@ This repository contains the workflow to deploy the aks cluster
 
 
     Run the following commands
+
     Set the cluster subscription
     ```
     az account set --subscription baf89069-e8f3-46f8-b74e-c146931ce7a4
@@ -39,9 +40,9 @@ This repository contains the workflow to deploy the aks cluster
   ```
    kubectl get namespace dev
   ```
-=====================================================
 
-Steps to deploy the cluster claim file:-
+
+## Steps to deploy the cluster claim file:-
 
   Clone the Repository locally
 
@@ -60,7 +61,7 @@ Name and id value should be same in cluster claim file (azure-aks-official.yaml)
 Name can have (max 12 character)
 
 
-special character are not allowed (_, -, @, %, &, # etc.)
+special characters are not allowed (_, -, @, %, &, # etc.)
 
   ```
   name:- team_name+user_name+any_suffix
@@ -71,7 +72,7 @@ special character are not allowed (_, -, @, %, &, # etc.)
        qasathyatest
   ```
 
-Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the required values from the below section in the required parameters
+Edit the aks cluster claim (azure-aks-official.yaml) file and replace required values from the below section in the required parameters
 
   ```
   nodeSize: (small, medium, large)
@@ -79,7 +80,7 @@ Edit the aks cluster claim (azure-aks-official.yaml) file and replace with the r
   version: (1.24.9, 1.24.10, 1.25.5, 1.25.6, 1.26.0, 1.26.3, 1.27.1)
   ```
 
-## Usage Example:-
+### Usage Example:-
 
 Cluster claim example file:-
 
@@ -107,7 +108,7 @@ Use dev namespace to deploy cluster claim
   kubectl apply -f azure-aks-official.yaml -n dev
   ```
 
-See the cluster creation status, Cluster creation can take upto 15 minutes
+See the cluster creation status, Cluster creation can take upto 10 minutes
 
   ```
   kubectl get managed
@@ -120,7 +121,7 @@ Ex:-
   kubectl --namespace dev get clusterclaims
   ```
 
-### Replace clusterclaim_name with cluster claim name
+#### Replace clusterclaim_name with cluster claim name
 
   ```
   kubectl describe clusterclaim clusterclaim_name -n dev
@@ -129,7 +130,7 @@ Ex:-
 
 Take the newly create cluster access locally
 
-### Replace value of cluster id at "cluster_id"  place 
+#### Replace value of cluster id at "cluster_id"  place 
 
   Get the kubeconfig file
     ```
