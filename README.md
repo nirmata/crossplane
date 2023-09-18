@@ -143,22 +143,25 @@ Take the access of newly  created cluster  locally
   kubectl --namespace dev \
       get secret cluster_id-cluster \
       --output jsonpath="{.data.kubeconfig}" \
-      | base64 -d >kubeconfig.yaml
+      | base64 -d > /tmp/kubeconfig.yaml
   ```
   ```
   Usage Example:- 
   # kubectl --namespace dev \
       get secret csvikash-cluster \
       --output jsonpath="{.data.kubeconfig}" \
-      | base64 -d >kubeconfig.yaml
+      | base64 -d > /tmp/kubeconfig.yaml
   ```
 
 
   ```
-  cat kubeconfig.yaml
+  cat /tmp/kubeconfig.yaml
   ```
   ```
-  export KUBECONFIG=$PWD/kubeconfig.yaml
+  KUBECONFIG="~/.kube/config:/tmp/kubeconfig.yaml" && kubectl config view --flatten > /tmp/config && mv /tmp/config ~/.kube/config
+  ```
+  ```
+  kubectl config use-context cluster_id    #It will set the cluster context
   ```
   ```
   kubectl get namespaces
