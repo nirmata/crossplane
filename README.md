@@ -180,7 +180,12 @@ Take the access of newly  created cluster  locally
 
 Below step should only follow if you want to delete the cluster
 
+
 To Delete the cluster
+
+  ```
+  kubectl config use-context crossplane    #It will set the cluster context
+  ```
 
   ```
   kubectl delete -f azure-aks-official.yaml -n dev
