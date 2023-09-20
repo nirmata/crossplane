@@ -209,3 +209,47 @@ Replace clusterid_name with your clusterid name
   ```
   kubectl describe kubernetescluster clusterid_name
   ```
+
+
+  
+Take the access of the newly created cluster locally
+...
+
+---
+
+## Best Practices
+
+1. **Keeping the Cluster on Azure:**
+- To ensure that the cluster remains on Azure, manually update the "DoNoDelete" tag on the AKS cluster from the Azure console.
+
+2. **Scaling Down Nodes:**
+- You can scale down nodes by updating the node count to 0 in the cluster claim file. For example:
+
+  ```yaml
+  apiVersion: devopstoolkitseries.com/v1alpha1
+  kind: ClusterClaim
+  metadata:
+    name: csvikasaks
+    namespace: dev
+  spec:
+    id: csvikasaks 
+    compositionSelector:
+      matchLabels:
+        provider: azure-official
+        cluster: aks
+    parameters:
+      nodeSize: medium
+      minNodeCount: 0
+      version: 1.25.5
+  ```
+
+3. **Deleting the cluster:**
+- After completing your work, you can delete the cluster using:
+
+  ```shell
+  kubectl delete -f azure-aks-official.yaml -n dev
+  ```
+
+4. **Follow Naming Conventions:**
+- When creating cluster names and IDs, follow the naming conventions mentioned in the README for consistency and clarity.
+
