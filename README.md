@@ -78,7 +78,7 @@ Edit the aks cluster claim (azure-aks-official.yaml) file and replace required v
   ```
   nodeSize: (small, medium, large)
   minNodeCount: (1-10)
-  version: (1.24.9, 1.24.10, 1.25.5, 1.25.6, 1.26.0, 1.26.3, 1.27.1)
+  version: (1.25.6, 1.25.11, 1.26.3, 1.26.6, 1.27.1, 1.27.3, 1.28.0)
   ```
 
 ### Usage Example:-
@@ -100,7 +100,7 @@ Cluster claim example file:-
     parameters:
       nodeSize: medium
       minNodeCount: 1
-      version: 1.25.5
+      version: 1.27.1
   ```
 
 Use dev namespace to deploy cluster claim
