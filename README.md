@@ -17,7 +17,7 @@ This repository contains the workflow to deploy the aks cluster
   ```
 
 
-2. Connect to crossplane cluster
+2. Connect to nirmata-devtest cluster
 
 
     Run the following commands
@@ -28,10 +28,10 @@ This repository contains the workflow to deploy the aks cluster
     ```
     Download cluster credentials
     ```
-    az aks get-credentials --resource-group crossplane --name crossplane
+    az aks get-credentials --resource-group nirmata-devtest --name nirmata-devtest
     ```
 
-    Verify the context, it should be "crossplane"
+    Verify the context, it should be "nirmata-devtest"
     ```
     kubectl config current-context
     ```
